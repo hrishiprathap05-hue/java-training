@@ -1,0 +1,152 @@
+public class OperatorsDemo{
+    public static void main(String[]args){
+        int a= 10;
+        int b=13;
+        System.out.println("a+b="+(a+b));
+        System.out.println("a-b="+(a-b));
+        System.out.println("a*b="+(a*b));
+        System.out.println("a/b="+(a/b));
+        System.out.println("a%b="+(a%b));
+    }
+}
+
+
+public class ComparisonDemo {
+    public static void main(String[] args) {
+        int p = 10;
+        int q = 20;
+
+        System.out.println("p == q  " + (p == q));
+        System.out.println("p != q  " + (p != q));     
+        System.out.println("p > q  " + (p > q));      
+        System.out.println("p < q  " + (p < q));      
+        System.out.println("p >= 10  " + (p >= 10));  
+        System.out.println("q <= 15  " + (q <= 15));     
+    }
+}
+
+
+
+
+public class AssignmentDemo {
+    public static void main(String[] args) {
+        int x = 10;
+        System.out.println(x);
+
+        x += 5;
+        System.out.println(x);
+
+        x -= 3;
+        System.out.println(x);
+
+        x *= 2;
+        System.out.println(x);
+
+        x /= 4;
+        System.out.println(x);
+
+        x %= 4;
+        System.out.println(x);
+    }
+}
+
+
+
+public class LogicalDemo {
+    public static void main(String[] args) {
+        int age =20;
+        
+        boolean hasId = true;
+        
+
+        System.out.println( age >=18 && hasId);
+        System.out.println(age <18 || hasId);
+        System.out.println(age != 18 && !hasId);
+    }
+}
+
+
+
+
+
+class Unary{
+    public static void main(String[]args){
+        int a=10;
+        a++;
+        System.out.println(a);
+        a--;
+        System.out.println(a);
+        --a;
+        System.out.println(a);
+        ++a;
+        System.out.println(a);
+    }
+}
+
+
+
+
+
+class main{
+    public static void main(String[]args){
+        int a=80;
+        String result=(a>40)?"pass":"fail";
+        System.out.println(result);
+    }
+}
+
+
+
+
+
+
+
+public class BitwiseDemo {
+    public static void main(String[] args) {
+        int a = 5, b = 3;
+
+        System.out.println(a & b);
+        System.out.println(a | b);
+        System.out.println(a ^ b);
+        System.out.println(a << 1);
+        System.out.println(a >> 1);
+    }
+}
+
+
+problem statement
+
+import java.util.Scanner;
+class main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter age:");
+            int age=sc.nextInt();
+        String Eligibility =(age>=18)?"eligible":"not eligile";
+        System.out.println(Eligibility);
+        sc.close();
+    }
+}
+
+
+
+
+import java.util.Scanner;
+
+public class EvenAndGreaterCheck {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Enter an integer: ");
+        int num = sc.nextInt();
+        
+        
+        if (num % 2 == 0 && num > 10) {
+            System.out.println(num + " is even and greater than 10.");
+        } else {
+            System.out.println(num + " is NOT both even and greater than 10.");
+        }
+        
+        sc.close();
+    }
+}
